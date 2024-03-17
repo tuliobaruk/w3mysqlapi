@@ -1,0 +1,8 @@
+docker run -d \
+  --name mysql-web3 \
+  --network host \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=appmysql \
+  -e MYSQL_USER=web3 \
+  -e MYSQL_PASSWORD=web3 \
+  mysql:latest
